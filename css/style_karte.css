@@ -338,10 +338,16 @@ footer a:hover {
 
 .modal-content {
     background: #fff;
-    padding: 30px;
+    padding: 25px;            /* Leicht reduzierter Abstand spart Platz */
     border-radius: 8px;
     text-align: center;
     max-width: 400px;
+    width: 90%;               /* Sorgt dafür, dass links/rechts auf Handys ein kleiner Rand bleibt */
+    
+    /* HIER SIND DIE NEUEN SCROLL-REGELN: */
+    max-height: 85vh;         /* Box darf maximal 85% der Bildschirmlänge einnehmen */
+    overflow-y: auto;         /* Aktiviert die vertikale Scrollbar, falls der Text zu lang ist */
+    
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
